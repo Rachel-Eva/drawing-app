@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing Application</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+      <div class="toolbar-wrapper">
+    <div class="title">Draw Time !</div>
+  <div class="toolbar">
+    <div class="tools">
+      <select id="tool">
+        <option value="pencil">Pencil</option>
+        <option value="brush">Brush</option>
+        <option value="eraser">Eraser</option>
+        <option value="line">Line</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="circle">Circle</option>
+      </select>
+      <input type="color" id="color" value="#000000">
+      <input type="range" id="brushSize" min="1" max="50" value="5">
+<button id="undo" title="Undo" class="icon-btn">
+  <img src="assets/icons/undo.svg" alt="Undo" class="icon">
+</button>
+<button id="redo" title="Redo" class="icon-btn">
+  <img src="assets/icons/redo.svg" alt="Redo" class="icon">
+</button>
+<button id="save" title="Save" class="icon-btn">
+  <img src="assets/icons/down-to-line.svg" alt="Save" class="icon">
+</button>
+<button id="load" title="Load" class="icon-btn">
+  <img src="assets/icons/file-upload.svg" alt="Load" class="icon">
+</button>
+    </div>
+  </div>
+  </div>
+    </div>
+    <div class="canvas-wrapper">
+      <img src="assets/painting.png" alt="Painting Cat" class="cat cat-left">
+      <div class="canvas-container">
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+      </div>
+      <img src="assets/pencil.png" alt="Pencil Cat" class="cat cat-right">
+    </div>
+    
+  
+  <script src="app.js"></script>
+  <footer class="credits">
+    <a href="https://www.flaticon.com/free-stickers/writing" title="writing stickers" target="_blank" rel="noopener noreferrer">
+      Writing stickers created by Stickers - Flaticon
+    </a>
+  </footer>
+  
+</body>
+</html> 
